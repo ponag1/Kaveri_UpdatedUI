@@ -1,0 +1,14 @@
+declared-services:
+   cloudant_land_records:
+      label: cloudantNoSQLDB
+      plan: Lite
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: kaveri1
+  host: kavericts1
+  disk_quota: 1024M
+  services:
+  - cloudant_land_records
