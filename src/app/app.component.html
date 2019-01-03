@@ -1,0 +1,25 @@
+<!-- This would embed the container class of bootstrap-->
+<div class="container-fluid">
+  <!-- Header Section starts here-->
+  <header class="header_bg">
+    <div class="header_left"></div>
+    <div class="header_right"></div>
+    <div class="container">
+      <div class="logo_pharma"> <a href="#"><img src="/assets/images/logo.png" alt="logo"/></a> </div>
+      <div class="banner_text_right"> Blockchain for Business<br>
+        <b>WITH IBM BLOCKCHAIN</b> </div>
+    </div>
+  </header>
+  <!-- Header Section ends here--> 
+  <!-- Content Section starts here-->
+  <router-outlet></router-outlet>
+  <!-- Content Section ends here-->
+  <!-- Footer Section starts here-->
+  <footer class="footer">©  copyright 2018</footer>
+  <!-- Footer Section ends here--> 
+  </div>
+  <script>
+  $(document).ready(function(){
+      $(".dropdown-toggle").dropdown();
+  });
+  </script>

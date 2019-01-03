@@ -1,0 +1,27 @@
+<div class="home_banner">
+  <div class="container" style="width:1230px;">
+      <h1>Kaveri</h1>
+      <h2>One click away for Land Registry</h2>
+      <h3>Online Land Records</h3>
+  </div>
+  </div>
+  <div class="login_container">
+      <div class="container" style="width:1230px; background: url(/assets/images/sign_in_title.png) no-repeat left center;
+      padding: 30px 0 40px 0; ">
+      <div class="col-lg-2">&nbsp;</div>
+      <form #userlogin = "ngForm" (ngSubmit) = "onSubmit(userlogin)" novalidate> 
+      <div class="form-group col-lg-4" [ngClass]="{ 'has-error': userlogin.submitted && !username.valid }">
+          <label>Username</label>
+          <input type="text" class="form-control" placeholder="Username" name="username" [(ngModel)]="login.username" #username="ngModel" required>
+      </div>
+      <div class="form-group col-lg-4" [ngClass]="{ 'has-error': userlogin.submitted && !password.valid }">
+          <label>Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="login.password" #password="ngModel" required>
+      </div>        
+      <div class="form-group col-lg-2">
+          <input type="submit" value="LOG IN">
+      </div> 
+      <div *ngIf="authMessage && authMessage!=''" class="alert alert-danger" ><b>{{authMessage}}</b></div>    
+      </form>
+      </div>
+  </div>
