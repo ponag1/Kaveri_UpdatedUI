@@ -80,7 +80,7 @@ ul, li, a, h1, h2, h3, p {
 	background: url(../images/banner_bg.png) no-repeat center top;
 	background-size: 100% auto;
 	min-height: 430px;
-	padding: 50px 0px 0px 0px;
+	padding: 20px 0px 20px 0px;
 	margin:0px;
 }
 .home_banner h1 {
@@ -107,7 +107,7 @@ ul, li, a, h1, h2, h3, p {
 .title_banner {
 	background: url(../images/title_bg.png) no-repeat center top;
 	background-size: 100% auto;
-	min-height: 129px;
+	min-height: 130px;
 	padding: 0px 0px 0px 0px;
 	margin:0px;
 	text-align: center;
@@ -125,43 +125,69 @@ ul, li, a, h1, h2, h3, p {
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
+.home_banner h2 {width: 400px; left:100px; position:relative; margin-top:40px;
+	text-transform: uppercase;}
 .login_container {
-	background:  #18415f;
+	width: 400px; background: #ffffff; left:100px; position:relative; padding:40px 40px 40px 40px; border-top:5px solid #0033a0; margin-bottom: 40px;
+}
+.login_container h2 {
+	color: #222222;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight:bold;
+	margin-top: 0px;width: 100%; left:0px; position:relative; 
 }
 .login_container label {
-	color: #667a8b;
-	text-transform: uppercase;
-	font-size: 14px;
+	color: #222222;
+	font-size: 20px;
 	display: block;
-	height: 25px;
+	font-weight:normal;
 }
 .login_container input[type="text"], .login_container input[type="password"] {
-	background: #FFFFF;
+	background: #e5e5e5;
 	width:100%;
 	border: 0px;
 	color: #667a8b;
 	padding:0px 10px;
 	height: 40px;
-	font-size: 14px;
+	font-size: 20px;
 	display: block;
+	margin-bottom: 10px;
 }
 .login_container input[type="submit"] {
-	background: #28bfdc;
+	background: #00b140;
 	padding:0px 40px;
 	border:0px;
 	height: 40px;
-	font-size: 14px;
-	margin-top: 30px;
+	font-size: 20px;
 	width:100%;
+	margin-top: 10px;
+	font-weight: bold;
+	color:#FFFFFF;
 }
 .red { color:#FF0000;}
-.mojani_form { background: #FFFFFF; padding: 30px 0px; margin-bottom: 30px;}
+.mojani_block_1 { margin: 0px 0px 20px 0px; background: #f7caa6 url( ../images/mojoni_1.png) no-repeat 30px center; padding: 50px 50px 50px 140px; color: #773a08; font-size: 18px; text-transform: uppercase; }
+.mojani_block_2 { margin: 0px 0px 20px 0px; background: #d28546 url( ../images/mojoni_2.png) no-repeat 30px center; padding: 50px 50px 50px 140px; color: #773a08; font-size: 20px; text-transform: uppercase; }
+.mojani_block_3 { margin: 0px 0px 20px 0px; background: #f7caa6 url( ../images/mojoni_3.png) no-repeat 30px center; padding: 50px 50px 50px 140px; color: #773a08; font-size: 18px; text-transform: uppercase; }
+.mojani_block_4 { margin: 0px 0px 20px 0px; background: #f7caa6 url( ../images/mojoni_4.png) no-repeat center 10px; padding: 110px 20px 20px 20px; color: #773a08; font-size: 10px; text-align: center;}
+.mojani_block_5 { margin: 0px 0px 20px 0px; background: #f7caa6 url( ../images/mojoni_5.png) no-repeat center 10px; padding: 110px 20px 20px 20px; color: #773a08; font-size: 10px; text-align: center;}
+.mojani_block_1 h3, .mojani_block_2 h3, .mojani_block_3 h3 { font-size: 22px; color:#3c1b01; font-weight: bold;}
+.mojani_block_4 h3, .mojani_block_5 h3 {  color: #773a08; font-size: 22px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px ;}
+.mojani_block_4 h4, .mojani_block_5 h4 { font-size: 12px; color:#333333; font-weight: normal; margin-bottom: 5px ;}
+.mojani_block_4 h4 a, .mojani_block_5 h4 a { font-size: 12px; color:#333333; font-weight: bold; text-decoration: underline; }
+.mojani_prev {background: url( ../images/prev.png) no-repeat center center;}
+.mojani_next {background: url( ../images/next.png) no-repeat center center;}
+.mojani_form { background: #FFFFFF; padding: 30px 0px; margin-bottom: 0px;}
+.mojani_form .heading { background: #f0d5c0; padding: 15px 35px; margin-bottom: 20px;}
+.mojani_form .heading span { font-size: 22px; text-transform: uppercase; margin-right: 10px; font-weight: bold; color:#3c1b01; }
 
+.mojani_form input[type="radio"] { font-size: 22px !important; margin-bottom: 20px;}
 .mojani_form .block {  padding: 0px 20px;}
 .mojani_form label { display: block; font-size: 15px; margin-bottom: 5px;}
 .mojani_form input[type="text"] { display: block; background: #E5E5E5; border:0px; width: 100%; padding: 0px 10px; margin-bottom: 20px; height: 45px;}
-.mojani_form input[type="submit"] { display: block; background: #27bed9 url(../images/search.png) no-repeat 15px center; border:0px; width: 60%; padding: 0px 10px 0px 10px; margin-bottom: 20px; font-size: 18px; text-transform: uppercase; height: 45px;}
-
+.mojani_form select { display: block; background: #E5E5E5; border:0px; width: 100%; padding: 0px 10px; margin-bottom: 20px; height: 45px;}
+.mojani_form input[type="submit"] { display: block; background: #d38547; border:0px; width: 100%; padding: 0px 10px 0px 10px; margin-bottom: 20px; font-size: 18px; height: 45px; color: #FFFFFF;}
+.mojani_form input[type="submit"].verify { display: block; background: #d38547 url(../images/verify_icon.png) no-repeat right center; border:0px; width: 100%; padding: 0px 10px 0px 10px; margin-bottom: 20px; font-size: 18px; height: 45px;}
 
 .mojani_form textarea { display: block; background: #E5E5E5; border:0px; width: 100%; padding: 12px 10px; margin-bottom: 10px; min-height: 200px;}
 .mojani_form h2 { color:#18415f; font-size: 18px; font-weight: bold; margin: 0px 15px 20px 35px;}
@@ -175,16 +201,17 @@ ul, li, a, h1, h2, h3, p {
 .mojani_form th {
     text-align: left;
     padding: 15px;
-	border-top: 3px solid #18415f;
-	border-bottom: 3px solid #18415f;
+	border-top: 3px solid #d38545;
+	border-bottom: 3px solid #d38545;
 	background: #FFFFFF;
 }
 .mojani_form td {
     text-align: left;
     padding: 15px;
 }
-.mojani_form tr:nth-child(odd) {background-color: #e7ecef;
-	border-top: 1px solid #8ba0af;
-	border-bottom: 1px solid #8ba0af;}
-.titlebar {background: #18415f; color: #FFFFFF; padding:20px 35px; font-size: 18px; text-transform: uppercase;}
+.mojani_form tr:nth-child(odd) {background-color: #fbf2eb;
+	border-top: 1px solid #f1d3bb;
+	border-bottom: 1px solid #f1d3bb;}
+.titlebar {background: #d38547; color: #FFFFFF; padding:20px 35px; font-size: 18px; text-transform: uppercase;}
 .titlebar img {float: right; margin-left: 10px;}
+.dropdown button {background-color: transparent; border: 0px; text-transform: uppercase; color:#FFFFFF; font-size: 14px;}
